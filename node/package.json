@@ -1,0 +1,18 @@
+{
+  "name": "test-bot",
+  "version": "1.0.0",
+  "description": "Get started example for Messenger Platform",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "realias": "now alias $(now ls | tail -n +5 | head -n1 | awk '{print $1}') test-bot",
+    "deploy": "now && npm run realias"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.0",
+    "config": "^1.20.4",
+    "ejs": "^2.4.2",
+    "express": "^4.13.4",
+    "request": "^2.72.0"
+  }
+}
