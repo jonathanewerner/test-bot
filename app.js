@@ -55,6 +55,10 @@ if (!(APP_SECRET && VALIDATION_TOKEN && PAGE_ACCESS_TOKEN && SERVER_URL)) {
   console.error("Missing config values");
   process.exit(1);
 }
+console.info('[app.js] SERVER_URL: ', SERVER_URL)
+console.info('[app.js] APP_SECRET: ', APP_SECRET)
+console.info('[app.js] PAGE_ACCESS_TOKEN: ', PAGE_ACCESS_TOKEN)
+console.info('[app.js] VALIDATION_TOKEN: ', VALIDATION_TOKEN)
 
 /*
  * Use your own validation token. Check that the token used in the Webhook 
